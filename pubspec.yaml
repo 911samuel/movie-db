@@ -23,8 +23,8 @@ dev_dependencies:
 flutter:
   uses-material-design: true
   assets:
-    - assets/Group.png
+    - assets/images.jpeg
 
 flutter_native_splash:
-  image: assets/splash.png
+  image: assets/muvi.webp
   backgroundColor: "#fff"

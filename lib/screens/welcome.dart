@@ -1,24 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:medica_app/screens/top_doctors.dart';
-
-void main() {
-  runApp(const MyApp());
-}
-
-class MyApp extends StatelessWidget {
-  const MyApp({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'Flutter Demo',
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-      ),
-      home: const Welcome(),
-    );
-  }
-}
+import 'package:medica_app/screens/signup.dart';
 
 class Welcome extends StatefulWidget {
   const Welcome({super.key});
@@ -32,10 +13,10 @@ class _WelcomeState extends State<Welcome> {
   @override
   void initState() {
     super.initState();
-    Future.delayed(const Duration(seconds: 4), () {
+    Future.delayed(const Duration(seconds: 6), () {
       Navigator.pushReplacement(
         context,
-        MaterialPageRoute(builder: (context) => const Topdoctors()),
+        MaterialPageRoute(builder: (context) => const SignupScreen()),
       );
     });
   }
@@ -57,7 +38,7 @@ class _WelcomeState extends State<Welcome> {
           children: [
             Expanded(
               child: Image.asset(
-                'assets/Group.png',
+                'assets/images.jpeg',
                 width:
                     double.infinity, // Ensure the image takes up the full width
               ),
@@ -76,7 +57,7 @@ class _WelcomeState extends State<Welcome> {
                     textAlign: TextAlign.center,
                   ),
                   Text(
-                    "Medica! 👋",
+                    "Muvi! 👋",
                     style: TextStyle(
                       fontSize: 48,
                       fontWeight: FontWeight.bold,
@@ -86,7 +67,7 @@ class _WelcomeState extends State<Welcome> {
                   ),
                   SizedBox(height: 32),
                   Text(
-                    "The best online doctor appointment & consultation app of the century for your health and medical needs!",
+                    "Enjoy the gathering of all movies.",
                     style: TextStyle(
                       fontSize: 18,
                       fontWeight: FontWeight.w500,

@@ -69,6 +69,7 @@ class _BottomNavigationBarExampleState
       ],
       currentIndex: _selectedIndex,
       selectedItemColor:const Color(0xFF246BFD),
+      unselectedItemColor: Colors.black,
       onTap: _onItemTapped,
     );
   }
