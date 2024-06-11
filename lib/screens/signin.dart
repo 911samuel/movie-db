@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:medica_app/screens/signup.dart';
-import 'package:medica_app/screens/top_doctors.dart';
+import 'package:medica_app/screens/movie_home.dart';
 
 class SigninScreen extends StatefulWidget {
   const SigninScreen({super.key});
@@ -79,7 +79,7 @@ class _SigninScreenState extends State<SigninScreen> {
                               Navigator.push(
                                 context,
                                 MaterialPageRoute(
-                                    builder: (context) => const Topdoctors()),
+                                    builder: (context) => const MovieHomePage()),
                               );
                             }
                           },

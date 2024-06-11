@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:medica_app/screens/welcome.dart';
-
 void main() {
   runApp(const MyApp());
 }
